@@ -2,14 +2,32 @@ import React from "react"
 import ClerkentLogo from '../../images/clerkent-dark.png'
 import DemoGif from '../../images/demo.gif'
 import { Link } from 'gatsby'
+import { Helmet } from 'react-helmet'
 import './home.scss'
+
+const title = `Clerkent`
+const description = `a browser extension that helps you quickly locate, view, and download legal judgments`
+const imageURL = `https://clerkent.huey.xyz${ClerkentLogo}`
 
 const HomePage = () => {
   return (
     <main id="home-page">
+      <Helmet
+        title="Clerkent"
+        meta={[
+          {content: title, property: `og:title`},
+          {content: description, name: `description`},
+          {content: `website`, property: `og:type`},
+          {content: imageURL, property: `og:image`},
+          {content: `summary_large_image`, name: `twitter:card`},
+          {content: title, name: `twitter:title`},
+          {content: description, name: `twitter:description`},
+          {content: imageURL, name: `twitter:image`},
+        ]}
+      />
       <img src={ClerkentLogo} alt="Clerkent" width="100" id="logo" />
-      <h1>Clerkent</h1>
-      <h2 className="subtitle">a browser extension that helps you quickly locate, view, and download legal judgments</h2>
+      <h1>{title}</h1>
+      <h2 className="subtitle">{description}</h2>
       <section className="download">
         <h2>Install: </h2>
         <div className="download-buttons">
