@@ -41,15 +41,9 @@
     }
   }
 
-  section.features {
+  section.screenshots {
     margin-top: 2rem;
 
-    >.demo-citations {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      column-gap: 1rem;
-      row-gap: 1rem;
-    }
   }
 
   section.more-links {

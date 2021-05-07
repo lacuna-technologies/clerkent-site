@@ -34,12 +34,8 @@ const HomePage = () => {
           </a>
         </div>
       </section>
-      <section className="features">
-        <p>Supports UK, EU (CJEU, EPO), SG, AU, and NZ citations. Try it out here:</p>
-        <div className="demo-citations">
-          <div>[2020] EWHC 2472</div>
-          <div>[1989] AC 217</div>
-        </div>
+      <section className="screenshots">
+        
       </section>
       <section className="more-links">
         <Link to="/help">Get Help</Link>
