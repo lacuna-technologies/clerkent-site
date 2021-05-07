@@ -1,0 +1,15 @@
+@import '~include-media/dist/_include-media.scss';
+@import '~reseter.css/css/reseter.min.css';
+
+a {
+  color: black;
+  text-decoration: underline dotted;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.subtitle {
+  font-weight: 400;
+}
