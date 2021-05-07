@@ -1,5 +1,6 @@
 import React from "react"
 import ClerkentLogo from '../../images/clerkent-dark.png'
+import DemoGif from '../../images/demo.gif'
 import { Link } from 'gatsby'
 import './home.scss'
 
@@ -35,7 +36,7 @@ const HomePage = () => {
         </div>
       </section>
       <section className="screenshots">
-        
+        <img src={DemoGif} alt="demo gif" />
       </section>
       <section className="more-links">
         <Link to="/help">Get Help</Link>
