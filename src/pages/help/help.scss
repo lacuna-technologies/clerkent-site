@@ -13,4 +13,8 @@
       line-height: normal;
     }
   }
+
+  .question + .question {
+    margin-top: 2rem;
+  }
 }
