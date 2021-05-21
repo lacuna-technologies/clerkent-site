@@ -1,30 +1,18 @@
 import React from "react"
 import ClerkentLogo from '../../images/clerkent-dark.png'
-import DemoGif from '../../images/demo.gif'
+import DemoGif from '../../images/clerkent-1.3-demo.gif'
+import OnHover from '../../images/on-hover.png'
 import { Link } from 'gatsby'
-import { Helmet } from 'react-helmet'
+import SEO from '../../components/SEO'
 import './home.scss'
 
 const title = `Clerkent`
 const description = `a browser extension that helps you quickly locate, view, and download legal judgments`
-const imageURL = `https://clerkent.huey.xyz${ClerkentLogo}`
 
 const HomePage = () => {
   return (
     <main id="home-page">
-      <Helmet
-        title="Clerkent"
-        meta={[
-          {content: title, property: `og:title`},
-          {content: description, name: `description`},
-          {content: `website`, property: `og:type`},
-          {content: imageURL, property: `og:image`},
-          {content: `summary_large_image`, name: `twitter:card`},
-          {content: title, name: `twitter:title`},
-          {content: description, name: `twitter:description`},
-          {content: imageURL, name: `twitter:image`},
-        ]}
-      />
+      <SEO title="Home" />
       <img src={ClerkentLogo} alt="Clerkent" width="100" id="logo" />
       <h1>{title}</h1>
       <h2 className="subtitle">{description}</h2>
@@ -53,9 +41,26 @@ const HomePage = () => {
           </a>
         </div>
       </section>
-      <section className="screenshots">
-        <img src={DemoGif} alt="demo gif" />
+      <section className="features">
+        <h2>Never more than one click away</h2>
+        <p>Search for judgments and legislative provisions directly from your browser toolbar</p> 
+        <ul>
+          <li>
+            Case law: United Kingdom, Court of Justice of the European Union (CJEU), Singapore, Hong Kong, Canda, Australia, and New Zealand
+          </li>
+          <li>
+            Legislation: only UK and SG for now, more coming soon
+          </li>
+        </ul>
+        <div><img src={DemoGif} alt="v1.3 demo gif" /></div>
+        <p>
+          Case citations on webpages are highlighted and are hyperlinked to the full judgements.
+        </p>
+        <div><img src={OnHover} alt="highlight screenshot" /></div>
       </section>
+      {/* <section className="screenshots">
+        <img src={DemoGif} alt="demo gif" />
+      </section> */}
       <section className="more-links">
         <Link to="/help">Get Help</Link>
       </section>

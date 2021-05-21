@@ -9,6 +9,7 @@
   margin: 0 auto;
   padding: 2rem 1rem;
   text-align: center;
+  font-size: 1.2rem;
 
   #logo {}
 
@@ -41,6 +42,20 @@
     }
   }
 
+  section.features {
+    text-align: left;
+
+    >div {
+      text-align: center;
+
+      >img {
+        text-align: center;
+        margin: 2rem auto;
+        border: 1px dotted black;
+      }
+    }
+  }
+
   section.screenshots {
     margin-top: 2rem;
 
@@ -48,15 +63,12 @@
 
   section.more-links {
     margin-top: 2rem;
-
-    >a {
-      font-size: 1.2rem;
-    }
   }
 
   footer {
     margin-top: 3rem;
     color: gray;
+    font-size: 1rem;
 
     a {
       color: darken(grey, 40%);

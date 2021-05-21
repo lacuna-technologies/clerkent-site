@@ -12,9 +12,19 @@
       font-size: 1.5rem;
       line-height: normal;
     }
+
+    &.highlighted {
+      >h2 {
+        color: darkblue;
+
+        &::before {
+          content: "👉 ";
+        }
+      }
+    }
   }
 
-  .question + .question {
+  .question+.question {
     margin-top: 2rem;
   }
 }

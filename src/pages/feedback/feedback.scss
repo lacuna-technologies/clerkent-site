@@ -1,0 +1,15 @@
+#feedback-page {
+  width: 100vw;
+  height: 100vh;
+
+  >.form-holder {
+    height: 100%;
+    width: 100%;
+
+    >iframe {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+}
