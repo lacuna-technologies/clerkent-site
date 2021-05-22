@@ -17,12 +17,8 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "lint:staged": "lint-staged"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint:staged"
-    }
+    "lint:staged": "lint-staged",
+    "prepare": "husky install"
   },
   "lint-staged": {
     "*.{ts,tsx,d.ts}": [
@@ -33,35 +29,35 @@
     ]
   },
   "dependencies": {
-    "gatsby": "^3.4.1",
-    "gatsby-plugin-react-helmet": "^4.4.0",
-    "gatsby-plugin-sass": "^4.4.0",
+    "gatsby": "^3.5.1",
+    "gatsby-plugin-react-helmet": "^4.5.0",
+    "gatsby-plugin-sass": "^4.5.0",
     "gatsby-plugin-scss-typescript": "^5.1.0",
-    "gatsby-plugin-typescript": "^3.4.0",
+    "gatsby-plugin-typescript": "^3.5.0",
     "include-media": "^1.4.10",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
     "reseter.css": "^1.1.3",
-    "sass": "^1.32.12"
+    "sass": "^1.33.0"
   },
   "devDependencies": {
-    "@types/node": "^15.0.2",
-    "@types/react": "^17.0.5",
-    "@types/react-dom": "^17.0.3",
+    "@types/node": "^15.6.0",
+    "@types/react": "^17.0.6",
+    "@types/react-dom": "^17.0.5",
     "@types/react-helmet": "^6.1.1",
-    "@typescript-eslint/eslint-plugin": "^4.22.1",
-    "@typescript-eslint/parser": "^4.22.1",
+    "@typescript-eslint/eslint-plugin": "^4.24.0",
+    "@typescript-eslint/parser": "^4.24.0",
     "eslint-config-react-app": "^6.0.0",
     "eslint-plugin-disable": "^2.0.1",
-    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-import": "^2.23.3",
     "eslint-plugin-json-format": "^2.0.1",
     "eslint-plugin-no-secrets": "^0.8.9",
     "eslint-plugin-security": "^1.4.0",
     "eslint-plugin-sonarjs": "^0.7.0",
     "eslint-plugin-sort-keys-fix": "^1.1.1",
     "husky": "^6.0.0",
-    "lint-staged": "^10.5.4",
+    "lint-staged": "^11.0.0",
     "typescript": "^4.2.4"
   }
 }
