@@ -25,7 +25,7 @@
       "tsc --jsx react --noEmit --esModuleInterop --skipLibCheck --resolveJsonModule"
     ],
     "*.{ts,tsx,js,jsx,json}": [
-      "eslint --fix"
+      "eslint --cache --fix"
     ]
   },
   "dependencies": {
