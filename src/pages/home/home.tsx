@@ -1,6 +1,6 @@
 import React from "react"
 import ClerkentLogo from '../../images/clerkent-dark.png'
-import DemoGif from '../../images/clerkent-1.3-demo.gif'
+import DemoGif from '../../images/screenshot-v2.1.2.png'
 import OnHover from '../../images/on-hover.png'
 import { Link } from 'gatsby'
 import SEO from '../../components/SEO'
@@ -8,7 +8,7 @@ import Layout from '../../components/Layout'
 import './home.scss'
 
 const title = `Clerkent`
-const description = `a browser extension that helps you quickly locate, view, and download legal judgments`
+const description = `quickly and conveniently search for case law and legislation`
 
 const HomePage = () => {
   return (
@@ -41,6 +41,13 @@ const HomePage = () => {
                 alt="Install for Google Chrome"
               />
             </a>
+            <Link to="/help#edge-installation">
+              <img
+                src="https://raw.githubusercontent.com/alrra/browser-logos/main/src/edge/edge.svg"
+                width="50"
+                alt="Install for Microsoft Edge"
+              />
+            </Link>
           </div>
         </section>
         <section className="features">
@@ -51,10 +58,10 @@ const HomePage = () => {
               Case law: United Kingdom, Court of Justice of the European Union (CJEU), Singapore, Hong Kong, Canda, Australia, and New Zealand
             </li>
             <li>
-              Legislation: only UK and SG for now, more coming soon
+              Legislation: only UK, SG, and EU for now, more coming soon
             </li>
           </ul>
-          <div><img src={DemoGif} alt="v1.3 demo gif" /></div>
+          <div><img src={DemoGif} alt="demo gif" /></div>
           <p>
             Case citations on webpages are highlighted and are hyperlinked to the full judgements.
           </p>
