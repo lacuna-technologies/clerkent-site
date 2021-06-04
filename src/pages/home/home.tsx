@@ -51,7 +51,6 @@ const HomePage = () => {
           </div>
         </section>
         <section className="features">
-          <h2>Never more than one click away</h2>
           <p>Search for judgments and legislative provisions directly from your browser toolbar</p> 
           <ul>
             <li>
@@ -74,7 +73,14 @@ const HomePage = () => {
           <Link to="/help">Get Help</Link>
         </section>
         <footer>
-          <p>created by <a target="_blank" href="https://huey.xyz" rel="noreferrer">Huey</a></p>
+          <p>
+            created by&nbsp;
+            <a target="_blank" href="https://huey.xyz" rel="noreferrer">Huey</a>
+          </p>
+          <p>
+            source code available on&nbsp;
+            <a target="_blank" href="https://github.com/lacuna-technologies/clerkent" rel="noreferrer">GitHub</a>
+          </p>
         </footer>
       </main>
     </Layout>
