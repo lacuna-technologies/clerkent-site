@@ -61,6 +61,17 @@ const HomePage = () => {
             </li>
           </ul>
           <div><img src={DemoGif} alt="demo gif" /></div>
+          <ul>
+            <li>
+              No need to check jurisdiction-specific websites when looking for foreign cases
+            </li>
+            <li>
+              Automatically renames PDFs of judgments to follow the standardised <code>&lt;case name&gt; &lt;case citation&gt;.pdf</code> naming system
+            </li>
+            <li>
+              Search proprietary databases (e.g. LawNet, WestLaw, etc.) if the case in question is not publicly-available
+            </li>
+          </ul>
           <p>
             Case citations on webpages are highlighted and are hyperlinked to the full judgements.
           </p>

@@ -52,6 +52,12 @@ const HelpPage = () => (
         </p>
       </Question>
       <Question>
+        <h2>I have an institutional login for a proprietary database (e.g. LawNet, WestLaw, Lexis, etc.)</h2>
+        <p>
+          Please specify your institutional affiliation in the Options (bottom-left of the popup). Clerkent will then redirect you to your institutional login page when accessing proprietary databases.
+        </p>
+      </Question>
+      <Question>
         <h2>The result returned for a certain query is wrong / could be better</h2>
         <p>
           Thank you! Please <Link to="#contact">let me know</Link>. Do specify which citation isn't working and what result is being returned.
