@@ -1,7 +1,5 @@
 import React from "react"
-import ClerkentLogo from '../../images/clerkent-dark.png'
-import DemoGif from '../../images/screenshot-v2.1.2.png'
-import OnHover from '../../images/on-hover.png'
+import { StaticImage } from 'gatsby-plugin-image'
 import { Link } from 'gatsby'
 import SEO from '../../components/SEO'
 import Layout from '../../components/Layout'
@@ -15,7 +13,7 @@ const HomePage = () => {
     <Layout noHeader>
       <SEO title="Home" />
       <main id="home-page">
-        <img src={ClerkentLogo} alt="Clerkent" width="100" id="logo" />
+        <StaticImage src='../../images/clerkent.png' alt="Clerkent" id="logo" width={100} />
         <h1>{title}</h1>
         <h2 className="subtitle">{description}</h2>
         <section className="download">
@@ -60,7 +58,7 @@ const HomePage = () => {
               Legislation: only UK, SG, and EU for now, more coming soon
             </li>
           </ul>
-          <div><img src={DemoGif} alt="demo gif" /></div>
+          <div><StaticImage src='../../images/screenshot_uk.png' alt="demo gif" /></div>
           <ul>
             <li>
               No need to check jurisdiction-specific websites when looking for foreign cases
@@ -75,7 +73,7 @@ const HomePage = () => {
           <p>
             Case citations on webpages are highlighted and are hyperlinked to the full judgements.
           </p>
-          <div><img src={OnHover} alt="highlight screenshot" /></div>
+          <div><StaticImage src='../../images/on-hover.png' alt="highlight screenshot" /></div>
         </section>
         {/* <section className="screenshots">
           <img src={DemoGif} alt="demo gif" />
