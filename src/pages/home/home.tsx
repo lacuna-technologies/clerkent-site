@@ -6,12 +6,12 @@ import Layout from '../../components/Layout'
 import './home.scss'
 
 const title = `Clerkent`
-const description = `quickly and conveniently search for case law and legislation`
+const description = `a quick and convenient legal search box`
 
 const HomePage = () => {
   return (
     <Layout noHeader>
-      <SEO title="Home" />
+      <SEO title="Home" description={description} />
       <main id="home-page">
         <StaticImage src='../../images/clerkent.png' alt="Clerkent" id="logo" width={100} />
         <h1>{title}</h1>
@@ -49,25 +49,25 @@ const HomePage = () => {
           </div>
         </section>
         <section className="features">
-          <p>Search for judgments and legislative provisions directly from your browser toolbar</p> 
-          <ul>
-            <li>
-              Case law: United Kingdom, Court of Justice of the European Union (CJEU), Singapore, Hong Kong, Canda, Australia, and New Zealand
-            </li>
-            <li>
-              Legislation: only UK, SG, and EU for now, more coming soon
-            </li>
-          </ul>
-          <div><StaticImage src='../../images/screenshot_uk.png' alt="demo gif" /></div>
           <ul>
             <li>
               No need to check jurisdiction-specific websites when looking for foreign cases
             </li>
             <li>
-              Automatically renames PDFs of judgments to follow the standardised <code>&lt;case name&gt; &lt;case citation&gt;.pdf</code> naming system
+              Automatically renames PDFs of judgments to follow the standard <code>&lt;case name&gt; &lt;case citation&gt;.pdf</code> naming system
             </li>
             <li>
               Search proprietary databases (e.g. LawNet, WestLaw, etc.) if the case in question is not publicly-available
+            </li>
+          </ul>
+          <div><StaticImage src='../../images/screenshot_uk.png' alt="demo gif" /></div>
+          <p>Search for judgments and legislative provisions across various Commonwealth jurisdictions</p> 
+          <ul>
+            <li>
+              Case law: United Kingdom, Court of Justice of the European Union (CJEU), Singapore, Hong Kong, Canda, Australia, and New Zealand
+            </li>
+            <li>
+              Legislation: UK, SG, and EU for now, more coming soon
             </li>
           </ul>
           <p>
@@ -75,15 +75,12 @@ const HomePage = () => {
           </p>
           <div><StaticImage src='../../images/on-hover.png' alt="highlight screenshot" /></div>
         </section>
-        {/* <section className="screenshots">
-          <img src={DemoGif} alt="demo gif" />
-        </section> */}
         <section className="more-links">
           <Link to="/help">Get Help</Link>
         </section>
         <footer>
           <p>
-            created by&nbsp;
+            made by&nbsp;
             <a target="_blank" href="https://huey.xyz" rel="noreferrer">Huey</a>
           </p>
           <p>
