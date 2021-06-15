@@ -48,10 +48,11 @@ module.exports = {
       `backtick`,
     ],
     "security/detect-non-literal-require": `off`,
+    "security/detect-object-injection": `off`,
     semi: [
       `warn`,
       `never`,
     ],
-  "sort-keys-fix/sort-keys-fix": `warn`,
+    "sort-keys-fix/sort-keys-fix": `warn`,
   },
 }

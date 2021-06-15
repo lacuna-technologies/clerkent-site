@@ -4,9 +4,10 @@ import { Link } from 'gatsby'
 import SEO from '../../components/SEO'
 import Layout from '../../components/Layout'
 import './home.scss'
+import Installation from "./Installation"
 
 const title = `Clerkent`
-const description = `a quick and convenient legal search box`
+const description = `a browser extension that helps you quickly and conveniently search for case law and legislation`
 
 const HomePage = () => {
   return (
@@ -16,38 +17,7 @@ const HomePage = () => {
         <StaticImage src='../../images/clerkent.png' alt="Clerkent" id="logo" width={100} />
         <h1>{title}</h1>
         <h2 className="subtitle">{description}</h2>
-        <section className="download">
-          <h2>Install: </h2>
-          <div className="download-buttons">
-            <a
-              href="https://addons.mozilla.org/en-US/firefox/addon/clerkent/"
-              title="link to firefox add-ons store"
-            >
-              <img
-                src="https://raw.githubusercontent.com/alrra/browser-logos/main/src/firefox/firefox.svg"
-                width="50"
-                alt="Install for Firefox"
-              />
-            </a>
-            <a
-              href="https://chrome.google.com/webstore/detail/clerkent/ogjefnociaddjemkkajgmfpmhmpokmhj"
-              title="link to chrome web store"
-            >
-              <img
-                src="https://raw.githubusercontent.com/alrra/browser-logos/main/src/chrome/chrome.svg"
-                width="50"
-                alt="Install for Google Chrome"
-              />
-            </a>
-            <Link to="/help#edge-installation">
-              <img
-                src="https://raw.githubusercontent.com/alrra/browser-logos/main/src/edge/edge.svg"
-                width="50"
-                alt="Install for Microsoft Edge"
-              />
-            </Link>
-          </div>
-        </section>
+        <Installation />
         <section className="features">
           <ul>
             <li>

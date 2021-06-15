@@ -1,6 +1,8 @@
 @import '~include-media/dist/_include-media.scss';
 @import '~reseter.css/css/reseter.min.css';
 
+$breakpoints: (phone: 768px, tablet: 992px, desktop: 1200px);
+
 a {
   color: black;
   text-decoration: underline dotted;
