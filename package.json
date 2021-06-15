@@ -9,7 +9,7 @@
     "chrome",
     "legaltech"
   ],
-  "license": "UNLICENSED",
+  "license": "BSD-3",
   "author": "Huey <hello@huey.xyz>",
   "scripts": {
     "develop": "gatsby develop",
