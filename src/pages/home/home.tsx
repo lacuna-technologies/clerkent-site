@@ -34,7 +34,7 @@ const HomePage = () => {
           <p>Search for judgments and legislative provisions across various Commonwealth jurisdictions</p> 
           <ul>
             <li>
-              Case law: United Kingdom, Court of Justice of the European Union (CJEU), Singapore, Hong Kong, Canda, Australia, and New Zealand
+              Case law: United Kingdom, Singapore, Hong Kong, Canda, Australia, New Zealand, Court of Justice of the European Union (CJEU), European Court of Human Rights (ECtHR), and International Court of Justice (ICJ)
             </li>
             <li>
               Legislation: UK, SG, and EU for now, more coming soon

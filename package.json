@@ -18,7 +18,8 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "lint:staged": "lint-staged",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "upload": "npm run build && surge public"
   },
   "lint-staged": {
     "*.{ts,tsx,d.ts}": [
