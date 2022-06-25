@@ -7,7 +7,7 @@ import './home.scss'
 import Installation from "./Installation"
 
 const title = `Clerkent`
-const description = `a browser extension that helps you quickly and conveniently search for case law and legislation`
+const description = `a browser extension that helps you quickly and conveniently search for case law`
 
 const HomePage = () => {
   return (
@@ -27,17 +27,38 @@ const HomePage = () => {
               Automatically renames PDFs of judgments to follow the standard <code>&lt;case name&gt; &lt;case citation&gt;.pdf</code> naming system
             </li>
             <li>
-              Search proprietary databases (e.g. LawNet, WestLaw, etc.) if the case in question is not publicly-available
+              Search proprietary databases (e.g. LawNet, WestLaw, etc.) with one click if the case in question is not publicly-available
             </li>
           </ul>
-          <div><StaticImage src='../../images/screenshot_uk.png' alt="demo gif" /></div>
-          <p>Search for judgments and legislative provisions across various Commonwealth jurisdictions</p> 
+          <div><StaticImage src='../../images/screenshot_sg.png' alt="screenshot" /></div>
+          <p>Search for judgments and opinions across various Commonwealth jurisdictions</p> 
           <ul>
             <li>
-              Case law: United Kingdom, Singapore, Hong Kong, Canda, Australia, New Zealand, Court of Justice of the European Union (CJEU), European Court of Human Rights (ECtHR), and International Court of Justice (ICJ)
+              United Kingdom
             </li>
             <li>
-              Legislation: UK, SG, and EU for now, more coming soon
+              Singapore
+            </li>
+            <li>
+              Hong Kong
+            </li>
+            <li>
+              Canada
+            </li>
+            <li>
+              Australia
+            </li>
+            <li>
+              New Zealand
+            </li>
+            <li>
+              Court of Justice of the European Union (CJEU)
+            </li>
+            <li>
+              European Court of Human Rights (ECtHR)
+            </li>
+            <li>
+              International Court of Justice (ICJ)
             </li>
           </ul>
           <p>
