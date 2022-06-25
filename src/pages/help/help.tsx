@@ -32,7 +32,7 @@ const HelpPage = () => (
 
       <h2>Installation</h2>
       <Question id="edge-installation">
-        <h2>Can I install Clerkent on Microsoft Edge?</h2>
+        <h3>Can I install Clerkent on Microsoft Edge?</h3>
         <p>
           Yes, if you are running the new Chromium-based Edge (if you've updated your browser since Jan 2020, you probably are), you can install the Chrome version of the extension in Edge. Follow the <a href="https://www.howtogeek.com/411830/how-to-install-google-chrome-extensions-in-microsoft-edge/">instructions here</a> to enable installation of Chrome extensions, then <a href="https://chrome.google.com/webstore/detail/clerkent/ogjefnociaddjemkkajgmfpmhmpokmhj">install Clerkent from the Chrome Web Store</a>.
         </p>
@@ -40,7 +40,7 @@ const HelpPage = () => (
 
       <h2>Usage</h2>
       <Question>
-        <h2>What can I key into the search box?</h2>
+        <h3>What can I key into the search box?</h3>
         <p>
           You can search for either cases or legislation.
         </p>
@@ -52,31 +52,31 @@ const HelpPage = () => (
         </p>
       </Question>
       <Question>
-        <h2>I have an institutional login for a proprietary database (e.g. LawNet, WestLaw, Lexis, etc.)</h2>
+        <h3>I have an institutional login for a proprietary database (e.g. LawNet, WestLaw, Lexis, etc.)</h3>
         <p>
           Please specify your institutional affiliation in the Options (bottom-left of the popup). Clerkent will then redirect you to your institutional login page when accessing proprietary databases.
         </p>
       </Question>
       <Question>
-        <h2>The result returned for a certain query is wrong / could be better</h2>
+        <h3>The result returned for a certain query is wrong / could be better</h3>
         <p>
           Thank you! Please <Link to="#contact">let me know</Link>. Do specify which citation isn't working and what result is being returned.
         </p>
       </Question>
       <Question>
-        <h2>I found a bug / want to request a feature / have a suggestion</h2>
+        <h3>I found a bug / want to request a feature / have a suggestion</h3>
         <p>
           Thank you! Please <Link to="#contact">contact me</Link>. Let me know the steps needed and browser to be used to reproduce the bug / how your suggestion or feature should work.
         </p>
       </Question>
       <Question>
-        <h2>Case citations on a certain website aren't being highlighted</h2>
+        <h3>Case citations on a certain website aren't being highlighted</h3>
         <p>Clerkent currently only activates on certain sites. If you <Link to="#contact">send me</Link> the URL to the site (stripped of anything too personal), I'll add it to the list and Clerkent will highlight citations on that site.</p>
       </Question>
 
       <h2>Privacy</h2>
       <Question>
-        <h2>Are searches tracked / is there telemetry / what data is collected?</h2>
+        <h3>Are searches tracked / is there telemetry / what data is collected?</h3>
         <p>
           Your search queries are used solely to perform the caselaw / legislation search in question. They are not logged or otherwise stored by Clerkent (although some query data may be stored by your browser or by the external 3rd-party databases queried by Clerkent).
         </p>
@@ -87,7 +87,7 @@ const HelpPage = () => (
 
       <h2>Contact Information</h2>
       <Question id="contact">
-        <h2>How can I contact you?</h2>
+        <h3>How can I contact you?</h3>
         <p>
           You can contact me via <a href="mailto:clerkent@huey.xyz">email</a> or <a href="https://t.me/hueyy">Telegram</a>. If you want to stay anonymous, you can use <Link to="/feedback">this form</Link>.
         </p>
