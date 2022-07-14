@@ -14,7 +14,7 @@ const HomePage = () => {
     <Layout noHeader>
       <SEO title="Home" description={description} />
       <main className="flex flex-col items-center py-4">
-        <StaticImage src='../../images/clerkent.png' alt="Clerkent" id="logo" width={100} className="mx-auto" />
+        <StaticImage src='../images/clerkent.png' alt="Clerkent" id="logo" width={100} className="mx-auto" />
         <h1 className="text-3xl font-bold my-4">{title}</h1>
         <h2 className="text-xl font-medium">{description}</h2>
         <Installation />
@@ -31,7 +31,7 @@ const HomePage = () => {
             </li>
           </ul>
           <div className="w-full text-center">
-            <StaticImage src='../../images/screenshot_sg.png' alt="screenshot" className="my-6 text-center border border-dotted border-black" />
+            <StaticImage src='../images/screenshot_sg.png' alt="screenshot" className="my-6 text-center border border-dotted border-black" />
           </div>
           <p>Search for judgments and opinions across various Commonwealth jurisdictions</p> 
           <ul className="list-disc list-outside ml-4 my-4">
@@ -67,7 +67,7 @@ const HomePage = () => {
             Case citations on webpages are highlighted and are hyperlinked to the full judgements.
           </p>
           <div className="text-center w-full">
-            <StaticImage src='../../images/on-hover.png' alt="highlight screenshot" className="my-6 text-center border border-dotted border-black" />
+            <StaticImage src='../images/on-hover.png' alt="highlight screenshot" className="my-6 text-center border border-dotted border-black" />
           </div>
         </section>
         <section className="my-4">

@@ -100,13 +100,13 @@ const InstallPage = () => {
         {
           browserState === `Chrome` ? (
             <StaticImage
-              src="../../images/chrome_extension_page_screenshot.png"
+              src="../images/chrome_extension_page_screenshot.png"
               alt={`Screenshot of Chrome extension page`}
             />
           ) :
           browserState === `Firefox` ? (
             <StaticImage
-              src="../../images/firefox_extension_page_screenshot.png"
+              src="../images/firefox_extension_page_screenshot.png"
               alt={`Screenshot of Chrome extension page`}
             />
           ) : null
