@@ -1,9 +1,7 @@
 import React from 'react'
-import Header from '../Header'
-import './layout.scss'
-
+import Header from './header'
 const Layout = ({ children, noHeader = false }) => (
-  <div id="layout">
+  <div className="max-w-screen-md w-full mx-auto p-4">
     { noHeader ? null : <Header /> }
     {children}
   </div>

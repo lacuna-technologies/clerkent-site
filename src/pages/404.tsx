@@ -1,7 +1,6 @@
 import React from 'react'
 
-// markup
-const NotFoundPage = () => {
+const NotFoundPage: React.FC = () => {
   return (
     <main>
       <title>Not found</title>

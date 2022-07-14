@@ -1,13 +1,12 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import './header.scss'
 
 const Header = () => {
   return (
-    <header className="header">
+    <header className="flex flex-row">
       <nav>
-        <Link className="title" to="/">
-          <strong>Clerkent</strong>
+        <Link className="text-2xl font-bold" to="/">
+          Clerkent
         </Link>
       </nav>
     </header>

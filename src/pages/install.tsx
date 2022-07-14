@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
-import SEO from '../../components/SEO'
-import Layout from '../../components/Layout'
-import UserAgent, { browserState } from '../../lib/UserAgent'
-import './install.scss'
+import SEO from '../components/SEO'
+import Layout from '../components/layout'
+import UserAgent, { browserState } from '../lib/UserAgent'
+import '../styles/styles.css'
 
 const browserMap = {
   'Chrome': {
@@ -29,19 +28,23 @@ const InstallPage = () => {
 
   useEffect(() => {
     setBrowserState(UserAgent.getBrowserState())
-    setBrowserName(UserAgent.getBrowserName())
+    setBrowserName(UserAgent.getBrowserName() as string)
   }, [])
 
   return (
     <Layout>
-      <main id="install-page">
-        <SEO title="Installation" description={description} />
-        <h1>Installation</h1>
-        <p>{description}</p>
-        <section className="installation-options">
-          <p>Clerkent is available for the following browsers:</p>
-          <div className="browsers-list">
-            <a className="chrome" href={browserMap[`Chrome`].storeURL}>
+      <SEO title="Installation" description={description} />
+      <main className="py-4">
+        <h1 className="text-3xl font-bold my-4">Installation</h1>
+        <p className="py-2">
+          {description}
+        </p>
+        <section className="my-4">
+          <p>
+            Clerkent is available for the following browsers:
+          </p>
+          <div className="flex justify-center gap-12 my-4">
+            <a href={browserMap[`Chrome`].storeURL}>
               <img
                 src={browserMap[`Chrome`].icon}
                 width="50"
@@ -49,7 +52,7 @@ const InstallPage = () => {
               />
               <span>Chrome</span>
             </a>
-            <a className="firefox" href={browserMap[`Firefox`].storeURL}>
+            <a href={browserMap[`Firefox`].storeURL}>
               <img
                 src={browserMap[`Firefox`].icon}
                 width="50"
@@ -57,21 +60,21 @@ const InstallPage = () => {
               />
               <span>Firefox</span>
             </a>
-            <Link className="edge" to={browserMap[`Edge`].storeURL}>
+            <a href={browserMap[`Edge`].storeURL}>
               <img
                 src={browserMap[`Edge`].icon}
                 width="50"
                 alt={`Install for Edge`}
               />
               <span>Edge</span>
-            </Link>
+            </a>
           </div>
         </section>
-        <div id="browser-guess">
+        <div className="flex mt-6 mb-8 gap-4">
           {
             (browserState === `Chrome` || browserState === `Firefox`) ? (
               <>
-              <div className="left">
+              <div className="flex justify-center items-center shrink-0">
                 <a
                   href={browserMap[browserState].storeURL}
                 >
@@ -83,7 +86,7 @@ const InstallPage = () => {
                 </a>
                 
               </div>
-              <div className="right">
+              <div>
                 <p>
                   It looks like your web browser is {browserName}.&nbsp;
                   After clicking <a href={browserMap[browserState].storeURL}>this link to the {browserName} extension page</a>,

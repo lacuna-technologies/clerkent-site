@@ -6,7 +6,6 @@ module.exports = {
     {
       resolve: `gatsby-plugin-typescript`,
     },
-    `gatsby-plugin-sass`,
   ],
   siteMetadata: {
     title: `Clerkent`,

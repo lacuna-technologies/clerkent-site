@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'gatsby'
-import UserAgent, { browserState } from '../../../lib/UserAgent'
+import UserAgent, { browserState } from '../lib/UserAgent'
 import { IoLaptopOutline } from 'react-icons/io5'
-import './Installation.scss'
 
 const browserMap = {
   'Chrome': {
@@ -19,6 +18,10 @@ const browserMap = {
   },
 } as const
 
+const browserGuessClass = `flex border border-solid border-black py-4 px-8 cursor-pointer gap-4 mb-4`
+const leftClass = `flex justify-center items-center`
+const rightClass = `flex items-center`
+
 const Installation = () => {
   const [browserState, setBrowserState] = useState(`Chrome` as browserState)
 
@@ -27,48 +30,47 @@ const Installation = () => {
   }, [])
 
   return (
-    <section id="clerkent-installation">
-      
+    <section className="my-8 text-center">
       {
         browserState === `Not Desktop` ? (
-          <div className="browser-guess">
-            <div className="left">
+          <div className={browserGuessClass}>
+            <div className={leftClass}>
               <IoLaptopOutline size="55" />
             </div>
-            <div className="right">
-              <p>
-                Clerkent is available only on laptops and desktop computers at the moment.
-                Please visit this page on a computer to install the extension.
-              </p>
+            <div className={rightClass}>
+              Clerkent is available only on laptops and desktop computers at the moment.
+              Please visit this page on a computer to install the extension.
             </div>
           </div>
         ) : browserState === `Unknown` ? (
-          <div className="browser-guess">
-            <div className="left">
+          <div className={browserGuessClass}>
+            <div className={leftClass}>
               🛠
             </div>
-            <div className="right">
-              <p>
-                Clerkent is only available for Chrome, Firefox, and Edge at the moment.
-              </p>
+            <div className={rightClass}>
+              Clerkent is only available for Chrome, Firefox, and Edge at the moment.
             </div>
           </div>
         ) : (
-          <a className="browser-guess" href={browserMap[browserState].storeURL}>
-            <div className="left">
+          <a className={browserGuessClass} href={browserMap[browserState].storeURL}>
+            <div className={leftClass}>
               <img
                 src={browserMap[browserState].icon}
                 width="50"
                 alt={`Install`}
               />
             </div>
-            <div className="right">
-              <h2>Install for {browserState}</h2>
+            <div className={rightClass}>
+              <h2 className="text-xl font-bold">
+                Install for {browserState}
+              </h2>
             </div>
           </a>
         )
       }
-      <Link to="/install">Install for other browsers</Link>
+      <Link to="/install">
+        Install for other browsers
+      </Link>
     </section>
   )
 }
