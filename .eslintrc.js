@@ -1,6 +1,5 @@
 module.exports = {
   extends: [
-    `react-app`,
     `plugin:security/recommended`,
     `plugin:sonarjs/recommended`,
     `plugin:import/errors`,
