@@ -33,7 +33,7 @@ const HomePage = () => {
           <div className="w-full text-center">
             <StaticImage src='../images/screenshot_sg.png' alt="screenshot" className="my-6 text-center border border-dotted border-black" />
           </div>
-          <p>Search for judgments and opinions across various Commonwealth jurisdictions</p> 
+          <p>Search for judgments and opinions across various jurisdictions</p> 
           <ul className="list-disc list-outside p-4">
             <li>
               United Kingdom
