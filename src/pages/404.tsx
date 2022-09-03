@@ -1,6 +1,6 @@
 import React from 'react'
 
-const NotFoundPage: React.FC = () => {
+const NotFoundPage = () => {
   return (
     <main>
       <title>Not found</title>

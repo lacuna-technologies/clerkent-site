@@ -1,23 +1,41 @@
-import React from "react"
+import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import { Link } from 'gatsby'
 import SEO from '../components/SEO'
 import Layout from '../components/layout'
-import Installation from "../components/installation"
-import '../styles/styles.css'
+import HeroFeature from '../components/heroFeature'
+import Container from '../components/container'
+import RenameFeature from '../components/renameFeature'
+import JurisdictionsFeatures from '../components/jurisdictionsFeature'
 
 const title = `Clerkent`
-const description = `a browser extension that helps you quickly and conveniently search for case law`
+const description = `case law at your fingertips, when and where you want it`
 
 const HomePage = () => {
   return (
     <Layout noHeader>
-      <SEO title="Home" description={description} />
-      <main className="flex flex-col items-center py-4">
-        <StaticImage src='../images/clerkent.png' alt="Clerkent" id="logo" width={100} className="mx-auto" />
-        <h1 className="text-3xl font-bold my-4">{title}</h1>
-        <h2 className="text-xl font-medium">{description}</h2>
-        <Installation />
+      <Container className="flex flex-row py-8 gap-6 items-center mx-auto">
+        <StaticImage
+          src='../images/clerkent.png'
+          alt="Clerkent"
+          width={85}
+          className="flex-none aspect-square"
+          quality={90}
+        />
+        <div>
+          <h1 className="md:text-5xl text-3xl font-bold mb-2">{title}</h1>
+          <h2 className="md:text-3xl text-xl font-medium">{description}</h2>
+        </div>
+      </Container>
+        
+      <div className="w-full max-w-screen-xl mx-auto border border-slate-200 border-t border-solid" />
+        
+      <HeroFeature />
+
+      <RenameFeature className="mt-8" />
+
+      <JurisdictionsFeatures className='mt-12' />
+
         <section>
           <ul className="list-disc list-outside pl-4">
             <li>
@@ -30,39 +48,9 @@ const HomePage = () => {
               Search proprietary databases (e.g. LawNet, WestLaw, etc.) with one click if the case in question is not publicly-available
             </li>
           </ul>
-          <div className="w-full text-center">
+          {/* <div className="w-full text-center">
             <StaticImage src='../images/screenshot_sg.png' alt="screenshot" className="my-6 text-center border border-dotted border-black" />
-          </div>
-          <p>Search for judgments and opinions across various jurisdictions</p> 
-          <ul className="list-disc list-outside p-4">
-            <li>
-              United Kingdom
-            </li>
-            <li>
-              Singapore
-            </li>
-            <li>
-              Hong Kong
-            </li>
-            <li>
-              Canada
-            </li>
-            <li>
-              Australia
-            </li>
-            <li>
-              New Zealand
-            </li>
-            <li>
-              Court of Justice of the European Union (CJEU)
-            </li>
-            <li>
-              European Court of Human Rights (ECtHR)
-            </li>
-            <li>
-              International Court of Justice (ICJ)
-            </li>
-          </ul>
+          </div> */}
           <p>
             Case citations on webpages are highlighted and are hyperlinked to the full judgements.
           </p>
@@ -111,9 +99,12 @@ const HomePage = () => {
             <a target="_blank" href="https://github.com/lacuna-technologies/clerkent" rel="noreferrer">GitHub</a>
           </p>
         </footer>
-      </main>
     </Layout>
   )
 }
 
 export default HomePage
+
+export const Head = () => (
+  <SEO title="Home" description={description} />
+)

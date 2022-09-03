@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
+import { useEffect, useState } from 'preact/hooks'
 import { StaticImage } from 'gatsby-plugin-image'
 import SEO from '../components/SEO'
 import Layout from '../components/layout'
 import UserAgent, { browserState } from '../lib/UserAgent'
-import '../styles/styles.css'
 
 const browserMap = {
   'Chrome': {
@@ -33,7 +33,6 @@ const InstallPage = () => {
 
   return (
     <Layout>
-      <SEO title="Installation" description={description} />
       <main className="py-4">
         <h1 className="text-3xl font-bold my-4">Installation</h1>
         <p className="py-2">
@@ -117,3 +116,7 @@ const InstallPage = () => {
 }
 
 export default InstallPage
+
+export const Head = () => (
+  <SEO title="Installation" description={description} />
+)

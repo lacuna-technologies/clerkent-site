@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
+import { useEffect, useState } from 'preact/hooks'
 import { Link } from 'gatsby'
 import Helpers from '../lib/Helpers'
 import SEO from '../components/SEO'
 import Layout from '../components/layout'
-import '../styles/styles.css'
-
 
 const QA = ({ id = ``, children, className = `` }) => {
   const [highlighted, setHighlighted] = useState(false)
@@ -44,7 +43,6 @@ const AnsP: React.FC<{ children: React.ReactNode }> = ({ children }) => (
 
 const HelpPage = () => (
   <Layout>
-    <SEO title="Help" />
     <main className="py-4">
       <h1 className="text-3xl font-bold mt-4 mb-10">Help</h1>
 
@@ -114,3 +112,7 @@ const HelpPage = () => (
 )
 
 export default HelpPage
+
+export const Head = () => (
+  <SEO title="Help" />
+)

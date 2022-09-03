@@ -1,10 +1,8 @@
 import React from 'react'
 import SEO from '../components/SEO'
-import '../styles/styles.css'
 
 const FeedbackPage = () => (
   <>
-    <SEO title="Feedback" />
     <div
       className="w-full h-full"
       dangerouslySetInnerHTML={{
@@ -15,3 +13,7 @@ const FeedbackPage = () => (
 )
 
 export default FeedbackPage
+
+export const Head = () => (
+  <SEO title="Feedback" />
+)

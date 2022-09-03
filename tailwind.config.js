@@ -8,6 +8,19 @@ module.exports = {
     `gatsby-plugin-postcss`,
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'mono': [
+          `Iosevka`,
+          `Ubuntu Mono`,
+          `Fira Code`,
+          `Jetbrains Mono`,
+          `ui-monospace`,
+          `SFMono-Regular`,
+          `Menlo`,
+          `monospace`,
+        ],
+      },
+    },
   },
 }

@@ -18,6 +18,11 @@
       Noto Color Emoji;
   }
 
+  ::selection,
+  ::-moz-selection {
+    background-color: rgb(0, 0, 0, 0.20);
+  }
+
   a {
     @apply underline decoration-dotted;
   }

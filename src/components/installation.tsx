@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
+import { useEffect, useState } from 'preact/hooks'
 import { Link } from 'gatsby'
 import UserAgent, { browserState } from '../lib/UserAgent'
 import { IoLaptopOutline } from 'react-icons/io5'
@@ -18,7 +19,7 @@ const browserMap = {
   },
 } as const
 
-const browserGuessClass = `flex border border-solid border-black py-4 px-8 cursor-pointer gap-4 mb-4`
+const browserGuessClass = `flex border border-solid border-black py-4 px-8 cursor-pointer gap-4 mb-4 no-underline hover:bg-neutral-100`
 const leftClass = `flex justify-center items-center`
 const rightClass = `flex items-center`
 
