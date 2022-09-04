@@ -1,5 +1,4 @@
-import React from 'react'
-import { useEffect, useState } from 'preact/hooks'
+import React, { useEffect, useState }  from 'react'
 import { Link } from 'gatsby'
 import Helpers from '../lib/Helpers'
 import SEO from '../components/SEO'

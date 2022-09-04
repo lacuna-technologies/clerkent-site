@@ -9,21 +9,12 @@ module.exports = {
   globals: {
     __PATH_PREFIX__: true,
   },
-  overrides: [
-    {
-      files: [`*.json`],
-      settings: {
-        "disable/plugins": [`no-secrets`],
-      },
-    },
-  ],
   parser: `@typescript-eslint/parser`,
   plugins: [
     `@typescript-eslint`,
     `json-format`,
     `security`,
     `disable`,
-    `no-secrets`,
     `sonarjs`,
     `sort-keys-fix`,
     `import`,
@@ -39,7 +30,6 @@ module.exports = {
     ],
     "jsx-a11y/accessible-emoji": `off`,
     "no-redeclare": `off`,
-    "no-secrets/no-secrets": `error`,
     "no-use-before-define": `off`,
     "prefer-const": `warn`,
     quotes: [

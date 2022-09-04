@@ -1,5 +1,4 @@
-import React from 'react'
-import { useEffect, useState } from 'preact/hooks'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'gatsby'
 import UserAgent, { browserState } from '../lib/UserAgent'
 import { IoLaptopOutline } from 'react-icons/io5'
@@ -19,9 +18,9 @@ const browserMap = {
   },
 } as const
 
-const browserGuessClass = `flex border border-solid border-black py-4 px-8 cursor-pointer gap-4 mb-4 no-underline hover:bg-neutral-100`
-const leftClass = `flex justify-center items-center`
-const rightClass = `flex items-center`
+const browserGuessClass = `flex md:flex-row flex-col border border-solid border-black py-4 md:px-8 px-4 cursor-pointer md:gap-4 gap-2 md:mb-4 mb-2 no-underline hover:bg-neutral-100`
+const leftClass = `flex justify-center items-center md:text-5xl text-3xl`
+const rightClass = `flex items-center text-sm leading-snug`
 
 const Installation = () => {
   const [browserState, setBrowserState] = useState(`Chrome` as browserState)
@@ -31,12 +30,12 @@ const Installation = () => {
   }, [])
 
   return (
-    <section className="my-8 text-center">
+    <section className="md:my-8 mt-4 text-center">
       {
         browserState === `Not Desktop` ? (
           <div className={browserGuessClass}>
             <div className={leftClass}>
-              <IoLaptopOutline size="55" />
+              <IoLaptopOutline />
             </div>
             <div className={rightClass}>
               Clerkent is available only on laptops and desktop computers at the moment.
@@ -69,7 +68,7 @@ const Installation = () => {
           </a>
         )
       }
-      <Link to="/install">
+      <Link to="/install" className="md:text-base text-sm">
         Install for other browsers
       </Link>
     </section>
