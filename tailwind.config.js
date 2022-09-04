@@ -9,6 +9,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        'clerkent-green': `#548235`,
+        'clerkent-green-light': `#689848`,
+      },
       fontFamily: {
         'mono': [
           `Iosevka`,

@@ -18,7 +18,7 @@ const browserMap = {
   },
 } as const
 
-const browserGuessClass = `flex md:flex-row flex-col border border-solid border-black py-4 md:px-8 px-4 cursor-pointer md:gap-4 gap-2 md:mb-4 mb-2 no-underline hover:bg-neutral-100`
+const browserGuessClass = `flex md:flex-row flex-col border border-solid py-4 md:px-8 px-4 cursor-pointer md:gap-4 gap-2 md:mb-4 mb-2 no-underline hover:bg-neutral-100`
 const leftClass = `flex justify-center items-center md:text-5xl text-3xl`
 const rightClass = `flex items-center text-sm leading-snug`
 
@@ -33,7 +33,7 @@ const Installation = () => {
     <section className="md:my-8 mt-4 text-center">
       {
         browserState === `Not Desktop` ? (
-          <div className={browserGuessClass}>
+          <div className={`border-black ${browserGuessClass}`}>
             <div className={leftClass}>
               <IoLaptopOutline />
             </div>
@@ -43,7 +43,7 @@ const Installation = () => {
             </div>
           </div>
         ) : browserState === `Unknown` ? (
-          <div className={browserGuessClass}>
+          <div className={`border-black ${browserGuessClass}`}>
             <div className={leftClass}>
               🛠
             </div>
@@ -52,8 +52,10 @@ const Installation = () => {
             </div>
           </div>
         ) : (
-          <a className={browserGuessClass} href={browserMap[browserState].storeURL}>
-            <div className={leftClass}>
+          <a
+            className={`bg-clerkent-green text-white ${browserGuessClass} border-clerkent-green hover:bg-clerkent-green-light`}
+            href={browserMap[browserState].storeURL}>
+            <div className={`${leftClass}`}>
               <img
                 src={browserMap[browserState].icon}
                 width="50"

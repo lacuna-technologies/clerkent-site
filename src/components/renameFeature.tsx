@@ -47,7 +47,7 @@ const RenameFeature = ({ className = `` }) => {
         <h4 className="md:text-2xl font-semibold">
           apply a standard <code>&lt;case name&gt; &lt;case citation&gt;.pdf</code> naming system
         </h4>
-        <div className="md:text-5xl text-2xl md:mt-6 mt-3 text-neutral-400 flex flex-row justify-center">
+        <div className="md:text-5xl text-2xl md:mt-6 mt-3 text-clerkent-green flex flex-row justify-center">
           <FaRegArrowAltCircleRight className="md:block hidden" />
           <FaRegArrowAltCircleDown className="block md:hidden" />
         </div>

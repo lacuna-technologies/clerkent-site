@@ -44,7 +44,7 @@ const InstallPage = () => {
           <p>
             Clerkent is available for the following browsers:
           </p>
-          <div className="flex justify-center gap-12 my-4">
+          <div className="flex justify-center text-center gap-12 my-4">
             <a href={browserMap[`Chrome`].storeURL}>
               <img
                 src={browserMap[`Chrome`].icon}

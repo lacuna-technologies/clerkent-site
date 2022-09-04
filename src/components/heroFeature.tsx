@@ -1,14 +1,16 @@
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 
-import { IoCheckmarkCircleOutline } from 'react-icons/io5'
+import { IoCheckmarkCircle } from 'react-icons/io5'
 import Installation from './installation'
 
 const FeatureCheckMark = ({ children }) => {
   return (
-    <div className="flex flex-row items-center text-2xl md:gap-4 gap-2 md:mb-4 mb-2">
-      <IoCheckmarkCircleOutline className="flex-none" />
-      <div className="md:text-2xl text-sm leading-tight">
+    <div className="flex flex-row items-center md:gap-4 gap-2 md:mb-4 mb-2">
+      <span className="text-2xl text-clerkent-green">
+        <IoCheckmarkCircle className="flex-none" />
+      </span>
+      <div className="md:text-2xl text-sm leading-tight text-black">
         {children}
       </div>
     </div>

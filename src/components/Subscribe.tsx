@@ -18,7 +18,7 @@ const Subscribe = ({ className = `` }) => {
       >
         <input className="p-2 w-full flex-auto border border-solid border-slate-600 rounded-l" placeholder="Your email address..." type="email" name="member[email]" id="member_email" />
         <input
-          className="py-2 px-4 my-4 bg-slate-800 border border-solid border-slate-800 text-white rounded-r outline-none cursor-pointer"
+          className="py-2 px-4 my-4 bg-clerkent-green border border-solid border-clerkent-green text-white rounded-r outline-none cursor-pointer"
           type="submit" value="Subscribe" name="member[subscribe]" id="member_submit"
         />
       </form>
