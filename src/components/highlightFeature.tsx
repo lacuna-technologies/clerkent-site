@@ -17,6 +17,7 @@ const HighlightFeature = ({ className = `` }) => {
         src='../images/screenshots/on-hover.png'
         alt="highlight screenshot"
         quality={90}
+        objectFit='contain'
       />
     </div>
   )

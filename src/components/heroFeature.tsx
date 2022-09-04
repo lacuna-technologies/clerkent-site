@@ -23,6 +23,7 @@ const HeroImage = () => {
       alt="screenshot"
       width={450}
       quality={90}
+      objectFit='contain'
     />
   )
 }

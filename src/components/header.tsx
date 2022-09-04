@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 
 const Header = () => {
   return (
-    <header className="flex flex-row">
+    <header className="flex flex-row max-w-screen-md mx-auto py-4 md:px-0 px-4">
       <nav>
         <Link className="text-2xl font-bold" to="/">
           Clerkent

@@ -42,7 +42,7 @@ const AnsP: React.FC<{ children: React.ReactNode }> = ({ children }) => (
 
 const HelpPage = () => (
   <Layout>
-    <main className="py-4">
+    <main className="max-w-screen-md mx-auto md:px-0 px-4 py-4">
       <h1 className="text-3xl font-bold mt-4 mb-10">Help</h1>
 
       <SectionHeader>Installation</SectionHeader>

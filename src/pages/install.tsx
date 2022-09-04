@@ -32,12 +32,15 @@ const InstallPage = () => {
 
   return (
     <Layout>
-      <main className="py-4">
-        <h1 className="text-3xl font-bold my-4">Installation</h1>
-        <p className="py-2">
-          {description}
-        </p>
-        <section className="my-4">
+      <main className="max-w-screen-md mx-auto py-4">
+        <div className="md:px-0 px-4">
+          <h1 className="text-3xl font-bold my-4">Installation</h1>
+          <p className="py-2">
+            {description}
+          </p>
+        </div>
+        
+        <section className="my-4 md:px-0 px-4">
           <p>
             Clerkent is available for the following browsers:
           </p>

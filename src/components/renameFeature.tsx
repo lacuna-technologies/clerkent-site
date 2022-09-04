@@ -7,7 +7,7 @@ const File = ({ children, maxLength = 30 }) => {
       <div className="flex-none md:text-xl text-lg text-red-900">
         <FaRegFilePdf />
       </div>
-      <div className="md:text-base text-xs ml-2 text-ellipsis overflow-hidden">
+      <div className="md:text-sm text-xs ml-2 text-ellipsis overflow-hidden">
         {children}.pdf
       </div>
     </div>
