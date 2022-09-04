@@ -16,6 +16,13 @@ const config: GatsbyConfig = {
     {
       resolve: `gatsby-plugin-typescript`,
     },
+    {
+      options: {
+        icon: `./src/images/clerkent.png`,
+        name: `Clerkent`,
+      },
+      resolve: `gatsby-plugin-manifest`,
+    },
   ],
   siteMetadata: {
     title: `Clerkent`,

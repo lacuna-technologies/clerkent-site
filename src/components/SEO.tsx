@@ -11,10 +11,16 @@ const SEO = ({
     <>
       <meta charSet="utf-8" />
       <title>{`${title} | Clerkent`}</title>
-      <meta name='title' property='og:title' content={title} />
+      <meta name='title' property='og:title' content={`${title} | Clerkent`} />
       <meta name='description' property='og:description' content={description} />
       <meta name='type' property='og:type' content='webstite' />
       <meta name='image' property='og:image' content={imageURL} />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta property="twitter:domain" content="clerkent.huey.xyz" />
+      <meta property="twitter:url" content="https://clerkent.huey.xyz/" />
+      <meta name="twitter:title" content={`${title} | Clerkent`} />
+      <meta name="twitter:description" content={description} />
+      <meta name="twitter:image" content={imageURL} />
       <script data-goatcounter="https://clerkent.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
       {children}
     </>
