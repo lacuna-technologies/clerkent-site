@@ -40,7 +40,7 @@ const HomePage = () => {
 
       <HighlightFeature />
 
-      <Subscribe />
+      {/* <Subscribe /> */}
 
       <section className="p-4 flex md:flex-row justify-center flex-col md:gap-6 gap-4 text-center mx-auto">
         <Link to="/help">Get Help</Link>
