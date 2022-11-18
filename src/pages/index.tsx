@@ -40,12 +40,12 @@ const HomePage = () => {
 
       <HighlightFeature />
 
-      <Subscribe className="md:my-6 py-3" />
+      <Subscribe />
 
       <section className="p-4 flex md:flex-row justify-center flex-col md:gap-6 gap-4 text-center mx-auto">
         <Link to="/help">Get Help</Link>
         <Link to="/feedback">Give Feedback</Link>
-        <a href="https://www.getrevue.co/profile/clerkent">Latest Updates</a>
+        <a href="https://updates.clerkent.huey.xyz/#/portal/">Latest Updates</a>
       </section>
       <footer className="flex flex-col items-center p-4 text-center">
         <p className="mb-2">

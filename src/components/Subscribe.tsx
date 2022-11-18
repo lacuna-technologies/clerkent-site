@@ -2,35 +2,18 @@ import React from 'react'
 
 const Subscribe = ({ className = `` }) => {
   return (
-    <section className={`max-w-screen-md mx-auto py-4 px-2 ${className}`}>
-      <p>
-        Pop your email address below if you'd like
-        to receive an email once in a few weeks about
-        the latest changes and upcoming features
-      </p>
-      <form
-        className="my-2 flex items-center"
-        action="https://www.getrevue.co/profile/clerkent/add_subscriber"
-        method="post"
-        id="revue-form"
-        name="revue-form"
-        target="_blank"
-      >
-        <input className="p-2 w-full flex-auto border border-solid border-slate-600 rounded-l" placeholder="Your email address..." type="email" name="member[email]" id="member_email" />
-        <input
-          className="py-2 px-4 my-4 bg-clerkent-green border border-solid border-clerkent-green text-white rounded-r outline-none cursor-pointer"
-          type="submit" value="Subscribe" name="member[subscribe]" id="member_submit"
-        />
-      </form>
-      <div className="text-sm my-4">
-        By subscribing, you agree with Revue's&nbsp;
-        <a target="_blank" href="https://www.getrevue.co/terms" rel="noreferrer">Terms of Service</a>
-        &nbsp;and&nbsp;
-        <a target="_blank" href="https://www.getrevue.co/privacy" rel="noreferrer">Privacy Policy</a>.&nbsp;
-        Your email address will only be used for
-        this purpose and will be deleted if you
-        unsubscribe (which you can do at any time).
+    <section className={`max-w-screen-md mx-auto flex justify-between my-4 ${className}`}>
+      <div className="flex-grow flex text-left px-4 py-2 border border-clerkent-green items-center">
+        <h1 className="md:text-2xl text-sm font-bold clerkent-green">
+          Latest changes and upcoming features
+        </h1>
       </div>
+      <a
+        className="flex-1 h-full bg-clerkent-green text-white border-clerkent-green border border-solid py-4 md:px-8 px-4 cursor-pointer hover:bg-clerkent-green-light text-center no-underline"
+        href="https://updates.clerkent.huey.xyz/#/portal/"
+      >
+        Subscribe
+      </a>
     </section>
   )
 }
