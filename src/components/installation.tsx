@@ -18,7 +18,7 @@ const browserMap = {
   },
 } as const
 
-const browserGuessClass = `flex md:flex-row flex-col border border-solid py-4 md:px-8 px-4 cursor-pointer md:gap-4 gap-2 md:mb-4 mb-2 no-underline hover:bg-neutral-100`
+const browserGuessClass = `flex md:flex-row flex-col border border-solid py-4 md:px-8 px-4 cursor-pointer md:gap-4 gap-2 md:mb-4 mb-2 no-underline`
 const leftClass = `flex justify-center items-center md:text-5xl text-3xl`
 const rightClass = `flex items-center text-sm leading-snug`
 

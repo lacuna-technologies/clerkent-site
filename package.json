@@ -36,6 +36,7 @@
     "gatsby-plugin-image": "^3.2.0",
     "gatsby-plugin-postcss": "^6.2.0",
     "gatsby-plugin-sharp": "^5.2.0",
+    "gatsby-source-filesystem": "^5.2.0",
     "gatsby-transformer-sharp": "^5.2.0",
     "postcss": "^8.4.19",
     "pure-react-carousel": "^1.30.1",
