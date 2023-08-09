@@ -34,9 +34,10 @@ const HeroFeature = ({ className = `` }) => {
   return (
     <div className={`flex md:flex-row flex-col max-w-screen-xl mx-auto ${className}`}>
       <div className="flex flex-col justify-center items-start md:p-6 p-4">
-        <h3 className="md:text-4xl text-lg font-black md:mb-8 mb-4">
-          Find and download judgments quickly without disrupting your workflow
+        <h3 className="md:text-2xl text-lg font-medium md:mb-8 mb-4">
+          A free and open source browser extension that helps you find and download judgments quickly without disrupting your workflow
         </h3>
+
         <FeatureCheckMark>
           Download judgments as PDFs with one click
         </FeatureCheckMark>
@@ -44,13 +45,13 @@ const HeroFeature = ({ className = `` }) => {
           Copy the case citation with one click
         </FeatureCheckMark>
         <FeatureCheckMark>
+          <kbd>Ctrl</kbd><kbd>Space</kbd> to start searching
+        </FeatureCheckMark>
+        <FeatureCheckMark>
           Search multiple databases at the same time
         </FeatureCheckMark>
         <FeatureCheckMark>
           Search by party name or case citation
-        </FeatureCheckMark>
-        <FeatureCheckMark>
-          Free and open source browser extension
         </FeatureCheckMark>
 
         <Installation />

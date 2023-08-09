@@ -30,4 +30,12 @@
   a:hover {
     @apply no-underline;
   }
+
+  kbd {
+    @apply border border-solid border-b-4 border-r-2 border-gray-300 rounded bg-gray-100 py-0.5 px-1 text-lg;
+  }
+
+  kbd + kbd {
+    @apply ml-1;
+  }
 }
