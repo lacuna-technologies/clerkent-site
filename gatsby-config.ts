@@ -17,6 +17,15 @@ const config: GatsbyConfig = {
       resolve: `gatsby-plugin-typescript`,
     },
     {
+      resolve: 'gatsby-plugin-matomo',
+      options: {
+        siteId: '3',
+        matomoUrl: 'https://analytics.huey.xyz',
+        siteUrl: 'https://clerkent.huey.xyz',
+        cookieDomain: '*.clerkent.huey.xyz',
+      }
+    },
+    {
       options: {
         icon: `./src/images/clerkent.png`,
         name: `Clerkent`,

@@ -21,7 +21,6 @@ const SEO = ({
       <meta name="twitter:title" content={`${title} | Clerkent`} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={imageURL} />
-      <script data-goatcounter="https://clerkent.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
       {children}
     </>
   )
